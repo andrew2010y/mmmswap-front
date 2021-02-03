@@ -1,21 +1,23 @@
+import { Break, CardBGImage, CardNoise, CardSection, DataCard } from '../earn/styled'
 import { ChainId, TokenAmount } from '@sushiswap/sdk'
-import React, { useMemo } from 'react'
-import { X } from 'react-feather'
-import styled from 'styled-components'
-import tokenLogo from '../../assets/images/token-logo.png'
-import { SUSHI } from '../../constants'
-import { useTotalSupply } from '../../data/TotalSupply'
-import { useActiveWeb3React } from '../../hooks'
-import { useMerkleDistributorContract } from '../../hooks/useContract'
-import useCurrentBlockTimestamp from '../../hooks/useCurrentBlockTimestamp'
-import { useTotalUniEarned } from '../../state/stake/hooks'
-import { useAggregateUniBalance, useTokenBalance } from '../../state/wallet/hooks'
 import { ExternalLink, StyledInternalLink, TYPE, UniTokenAnimated } from '../../theme'
-import { computeUniCirculation } from '../../utils/computeUniCirculation'
-import useUSDCPrice from '../../utils/useUSDCPrice'
+import React, { useMemo } from 'react'
+import { useAggregateUniBalance, useTokenBalance } from '../../state/wallet/hooks'
+
 import { AutoColumn } from '../Column'
 import { RowBetween } from '../Row'
-import { Break, CardBGImage, CardNoise, CardSection, DataCard } from '../earn/styled'
+import { SUSHI } from '../../constants'
+import { X } from 'react-feather'
+import { computeUniCirculation } from '../../utils/computeUniCirculation'
+import styled from 'styled-components'
+// import tokenLogo from '../../assets/images/token-logo.png'
+import tokenLogo from '../../assets/images/sushi.png'
+import { useActiveWeb3React } from '../../hooks'
+import useCurrentBlockTimestamp from '../../hooks/useCurrentBlockTimestamp'
+import { useMerkleDistributorContract } from '../../hooks/useContract'
+import { useTotalSupply } from '../../data/TotalSupply'
+import { useTotalUniEarned } from '../../state/stake/hooks'
+import useUSDCPrice from '../../utils/useUSDCPrice'
 
 const ContentWrapper = styled(AutoColumn)`
   width: 100%;
@@ -67,7 +69,7 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
         <CardNoise />
         <CardSection gap="md">
           <RowBetween>
-            <TYPE.white color="white">Your SUSHIBreakdown</TYPE.white>
+            <TYPE.white color="white">Your SUSHI Breakdown</TYPE.white>
             <StyledClose stroke="white" onClick={() => setShowUniBalanceModal(false)} />
           </RowBetween>
         </CardSection>
@@ -86,7 +88,7 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
                   <TYPE.white color="white">Balance:</TYPE.white>
                   <TYPE.white color="white">{uniBalance?.toFixed(2, { groupSeparator: ',' })}</TYPE.white>
                 </RowBetween>
-                <RowBetween>
+                {/* <RowBetween>
                   <TYPE.white color="white">Unclaimed:</TYPE.white>
                   <TYPE.white color="white">
                     {uniToClaim?.toFixed(4, { groupSeparator: ',' })}{' '}
@@ -96,7 +98,7 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
                       </StyledInternalLink>
                     )}
                   </TYPE.white>
-                </RowBetween>
+                </RowBetween> */}
               </AutoColumn>
             </CardSection>
             <Break />
@@ -105,11 +107,11 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
         <CardSection gap="sm">
           <AutoColumn gap="md">
             <RowBetween>
-              <TYPE.white color="white">SUSHIprice:</TYPE.white>
+              <TYPE.white color="white">SUSHI price:</TYPE.white>
               <TYPE.white color="white">${uniPrice?.toFixed(2) ?? '-'}</TYPE.white>
             </RowBetween>
             <RowBetween>
-              <TYPE.white color="white">SUSHIin circulation:</TYPE.white>
+              <TYPE.white color="white">SUSHI in circulation:</TYPE.white>
               <TYPE.white color="white">{circulation?.toFixed(0, { groupSeparator: ',' })}</TYPE.white>
             </RowBetween>
             <RowBetween>
@@ -117,7 +119,9 @@ export default function UniBalanceContent({ setShowUniBalanceModal }: { setShowU
               <TYPE.white color="white">{totalSupply?.toFixed(0, { groupSeparator: ',' })}</TYPE.white>
             </RowBetween>
             {uni && uni.chainId === ChainId.MAINNET ? (
-              <ExternalLink href={`https://uniswap.info/token/${uni.address}`}>View SUSHIAnalytics</ExternalLink>
+              <ExternalLink href={`https://analytics.sushiswap.fi/token/${uni.address}`}>
+                View SUSHI Analytics
+              </ExternalLink>
             ) : null}
           </AutoColumn>
         </CardSection>

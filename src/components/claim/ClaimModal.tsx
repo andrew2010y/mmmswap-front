@@ -1,24 +1,24 @@
-import { JSBI, TokenAmount } from '@sushiswap/sdk'
-import { isAddress } from 'ethers/lib/utils'
-import React, { useEffect, useState } from 'react'
-import { Text } from 'rebass'
-import styled from 'styled-components'
-import Circle from '../../assets/images/blue-loader.svg'
-import tokenLogo from '../../assets/images/token-logo.png'
-import { useActiveWeb3React } from '../../hooks'
-import { ApplicationModal } from '../../state/application/actions'
-import { useModalOpen, useToggleSelfClaimModal } from '../../state/application/hooks'
-import { useClaimCallback, useUserClaimData, useUserUnclaimedAmount } from '../../state/claim/hooks'
-import { useUserHasSubmittedClaim } from '../../state/transactions/hooks'
-import { CloseIcon, CustomLightSpinner, ExternalLink, TYPE, UniTokenAnimated } from '../../theme'
-import { getEtherscanLink } from '../../utils'
-import { ButtonPrimary } from '../Button'
 import { AutoColumn, ColumnCenter } from '../Column'
-import Confetti from '../Confetti'
 import { Break, CardBGImage, CardBGImageSmaller, CardNoise, CardSection, DataCard } from '../earn/styled'
+import { CloseIcon, CustomLightSpinner, ExternalLink, TYPE, UniTokenAnimated } from '../../theme'
+import { JSBI, TokenAmount } from '@sushiswap/sdk'
+import React, { useEffect, useState } from 'react'
+import { useClaimCallback, useUserClaimData, useUserUnclaimedAmount } from '../../state/claim/hooks'
+import { useModalOpen, useToggleSelfClaimModal } from '../../state/application/hooks'
 
+import { ApplicationModal } from '../../state/application/actions'
+import { ButtonPrimary } from '../Button'
+import Circle from '../../assets/images/blue-loader.svg'
+import Confetti from '../Confetti'
 import Modal from '../Modal'
 import { RowBetween } from '../Row'
+import { Text } from 'rebass'
+import { getEtherscanLink } from '../../utils'
+import { isAddress } from 'ethers/lib/utils'
+import styled from 'styled-components'
+import tokenLogo from '../../assets/images/token-logo.png'
+import { useActiveWeb3React } from '../../hooks'
+import { useUserHasSubmittedClaim } from '../../state/transactions/hooks'
 
 const ContentWrapper = styled(AutoColumn)`
   width: 100%;
@@ -136,7 +136,7 @@ export default function ClaimModal() {
           </ModalUpper>
           <AutoColumn gap="md" style={{ padding: '1rem', paddingTop: '0' }} justify="center">
             <TYPE.subHeader fontWeight={500}>
-              As a member of the Sushiswap community you may claim SUSHIto be used for voting and governance. <br />{' '}
+              As a member of the SushiSwap community you may claim SUSHI to be used for voting and governance. <br />{' '}
               <br />
               <ExternalLink href="https://uniswap.org/blog/uni">Read more about SUSHI</ExternalLink>
             </TYPE.subHeader>

@@ -54,11 +54,11 @@ export const TIMELOCK_ADDRESS = '0x1a9C8182C09F50C8318d769245beA52c32BE35BC'
 const SUSHI_ADDRESS = '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2'
 
 export const SUSHI: { [chainId in ChainId]: Token } = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, SUSHI_ADDRESS, 18, 'SUSHI', 'Sushiswap'),
-  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, SUSHI_ADDRESS, 18, 'SUSHI', 'Sushiswap'),
-  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, SUSHI_ADDRESS, 18, 'SUSHI', 'Sushiswap'),
-  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, SUSHI_ADDRESS, 18, 'SUSHI', 'Sushiswap'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, SUSHI_ADDRESS, 18, 'SUSHI', 'Sushiswap')
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, SUSHI_ADDRESS, 18, 'SUSHI', 'SushiSwap'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, SUSHI_ADDRESS, 18, 'SUSHI', 'SushiSwap'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, SUSHI_ADDRESS, 18, 'SUSHI', 'SushiSwap'),
+  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, SUSHI_ADDRESS, 18, 'SUSHI', 'SushiSwap'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, SUSHI_ADDRESS, 18, 'SUSHI', 'SushiSwap')
 }
 
 export const COMMON_CONTRACT_NAMES: { [address: string]: string } = {

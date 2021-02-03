@@ -1,6 +1,6 @@
 {
   "name": "@uniswap/interface",
-  "description": "Sushiswap Interface",
+  "description": "SushiSwap Interface",
   "homepage": ".",
   "private": true,
   "devDependencies": {
@@ -119,7 +119,8 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "@sushiswap/core": "^1.4.1",
     "@sushiswap/sdk": "^3.0.2",
-    "@uniswap/default-token-list": "^2.0.0"
+    "@sushiswap/default-token-list": "git+https://github.com/sushiswap/default-token-list.git"
   }
 }

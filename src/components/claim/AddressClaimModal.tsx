@@ -1,24 +1,25 @@
-import React, { useState } from 'react'
-import Modal from '../Modal'
 import { AutoColumn, ColumnCenter } from '../Column'
-import styled from 'styled-components'
-import { DataCard, CardSection, Break } from '../earn/styled'
-import { RowBetween } from '../Row'
-import { TYPE, ExternalLink, CloseIcon, CustomLightSpinner, UniTokenAnimated } from '../../theme'
-import { ButtonPrimary } from '../Button'
-import { useClaimCallback, useUserUnclaimedAmount, useUserHasAvailableClaim } from '../../state/claim/hooks'
-import tokenLogo from '../../assets/images/token-logo.png'
-import Circle from '../../assets/images/blue-loader.svg'
-import { Text } from 'rebass'
-import AddressInputPanel from '../AddressInputPanel'
-import useENS from '../../hooks/useENS'
-import { useActiveWeb3React } from '../../hooks'
-import { isAddress } from 'ethers/lib/utils'
-import Confetti from '../Confetti'
-import { CardNoise, CardBGImage, CardBGImageSmaller } from '../earn/styled'
-import { useIsTransactionPending } from '../../state/transactions/hooks'
-import { TokenAmount } from '@sushiswap/sdk'
+import { Break, CardSection, DataCard } from '../earn/styled'
+import { CardBGImage, CardBGImageSmaller, CardNoise } from '../earn/styled'
+import { CloseIcon, CustomLightSpinner, ExternalLink, TYPE, UniTokenAnimated } from '../../theme'
+import React, { useState } from 'react'
 import { getEtherscanLink, shortenAddress } from '../../utils'
+import { useClaimCallback, useUserHasAvailableClaim, useUserUnclaimedAmount } from '../../state/claim/hooks'
+
+import AddressInputPanel from '../AddressInputPanel'
+import { ButtonPrimary } from '../Button'
+import Circle from '../../assets/images/blue-loader.svg'
+import Confetti from '../Confetti'
+import Modal from '../Modal'
+import { RowBetween } from '../Row'
+import { Text } from 'rebass'
+import { TokenAmount } from '@sushiswap/sdk'
+import { isAddress } from 'ethers/lib/utils'
+import styled from 'styled-components'
+import tokenLogo from '../../assets/images/token-logo.png'
+import { useActiveWeb3React } from '../../hooks'
+import useENS from '../../hooks/useENS'
+import { useIsTransactionPending } from '../../state/transactions/hooks'
 
 const ContentWrapper = styled(AutoColumn)`
   width: 100%;
@@ -102,7 +103,7 @@ export default function AddressClaimModal({ isOpen, onDismiss }: { isOpen: boole
             <CardNoise />
             <CardSection gap="md">
               <RowBetween>
-                <TYPE.white fontWeight={500}>Claim SUSHIToken</TYPE.white>
+                <TYPE.white fontWeight={500}>Claim SUSHI Token</TYPE.white>
                 <CloseIcon onClick={wrappedOnDismiss} style={{ zIndex: 99 }} stroke="white" />
               </RowBetween>
               <TYPE.white fontWeight={700} fontSize={36}>
@@ -113,8 +114,8 @@ export default function AddressClaimModal({ isOpen, onDismiss }: { isOpen: boole
           </ModalUpper>
           <AutoColumn gap="md" style={{ padding: '1rem', paddingTop: '0' }} justify="center">
             <TYPE.subHeader fontWeight={500}>
-              Enter an address to trigger a SUSHIclaim. If the address has any claimable SUSHIit will be sent to them on
-              submission.
+              Enter an address to trigger a SUSHI claim. If the address has any claimable SUSHI it will be sent to them
+              on submission.
             </TYPE.subHeader>
             <AddressInputPanel value={typed} onChange={handleRecipientType} />
             {parsedAddress && !hasAvailableClaim && (

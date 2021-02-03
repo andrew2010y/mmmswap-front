@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Describe an issue in the Sushiswap Interface
+about: Describe an issue in the SushiSwap Interface
 title: ''
 labels: bug
 assignees: ''

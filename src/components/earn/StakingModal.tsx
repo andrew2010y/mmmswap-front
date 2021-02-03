@@ -144,7 +144,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
       { name: 'verifyingContract', type: 'address' }
     ]
     const domain = {
-      name: 'Sushiswap V2',
+      name: 'SushiSwap V2',
       version: '1',
       chainId: chainId,
       verifyingContract: pairContract.address

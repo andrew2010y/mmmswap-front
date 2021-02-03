@@ -139,12 +139,12 @@ export default function Vote() {
           <CardSection>
             <AutoColumn gap="md">
               <RowBetween>
-                <TYPE.white fontWeight={600}>Sushiswap Governance</TYPE.white>
+                <TYPE.white fontWeight={600}>SushiSwap Governance</TYPE.white>
               </RowBetween>
               <RowBetween>
                 <TYPE.white fontSize={14}>
-                  SUSHItokens represent voting shares in Sushiswap governance. You can vote on each proposal yourself or
-                  delegate your votes to a third party.
+                  SUSHI tokens represent voting shares in SushiSwap governance. You can vote on each proposal yourself
+                  or delegate your votes to a third party.
                 </TYPE.white>
               </RowBetween>
               <ExternalLink
@@ -152,7 +152,7 @@ export default function Vote() {
                 href="https://uniswap.org/blog/uni"
                 target="_blank"
               >
-                <TYPE.white fontSize={14}>Read more about Sushiswap governance</TYPE.white>
+                <TYPE.white fontSize={14}>Read more about SushiSwap governance</TYPE.white>
               </ExternalLink>
             </AutoColumn>
           </CardSection>
@@ -232,7 +232,7 @@ export default function Vote() {
         })}
       </TopSection>
       <TYPE.subHeader color="text3">
-        A minimum threshhold of 1% of the total SUSHIsupply is required to submit proposals
+        A minimum threshhold of 1% of the total SUSHI supply is required to submit proposals
       </TYPE.subHeader>
     </PageWrapper>
   )

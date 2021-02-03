@@ -43,7 +43,7 @@ export default function MigrateV1() {
   const V1LiquidityTokens: Token[] = useMemo(() => {
     return chainId
       ? Object.keys(V1Exchanges).map(
-          exchangeAddress => new Token(chainId, exchangeAddress, 18, 'SUSHI-V1', 'Sushiswap V1')
+          exchangeAddress => new Token(chainId, exchangeAddress, 18, 'SUSHI-V1', 'SushiSwap V1')
         )
       : []
   }, [chainId, V1Exchanges])
@@ -75,13 +75,13 @@ export default function MigrateV1() {
           <BackArrow to="/pool" />
           <TYPE.mediumHeader>Migrate V1 Liquidity</TYPE.mediumHeader>
           <div>
-            <QuestionHelper text="Migrate your liquidity tokens from Sushiswap V1 to Sushiswap V2." />
+            <QuestionHelper text="Migrate your liquidity tokens from SushiSwap V1 to SushiSwap V2." />
           </div>
         </AutoRow>
 
         <TYPE.body style={{ marginBottom: 8, fontWeight: 400 }}>
-          For each pool shown below, click migrate to remove your liquidity from Sushiswap V1 and deposit it into
-          Sushiswap V2.
+          For each pool shown below, click migrate to remove your liquidity from SushiSwap V1 and deposit it into
+          SushiSwap V2.
         </TYPE.body>
 
         {!account ? (

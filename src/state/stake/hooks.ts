@@ -1,11 +1,12 @@
-import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, WETH, Pair } from '@sushiswap/sdk'
-import { useMemo } from 'react'
+import { ChainId, CurrencyAmount, JSBI, Pair, Token, TokenAmount, WETH } from '@sushiswap/sdk'
 import { DAI, SUSHI, USDC, USDT, WBTC } from '../../constants'
-import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
-import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
+
+import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { tryParseAmount } from '../swap/hooks'
+import { useActiveWeb3React } from '../../hooks'
 import useCurrentBlockTimestamp from 'hooks/useCurrentBlockTimestamp'
+import { useMemo } from 'react'
 
 export const STAKING_GENESIS = 1600387200
 
