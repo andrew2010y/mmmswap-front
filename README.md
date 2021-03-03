@@ -1,10 +1,9 @@
-# SushiSwap Classic Exchange Interface
+# MMMSwap Classic Exchange Interface
 
-Forked from [Uniswap/uniswap-interface](https://github.com/Uniswap/uniswap-interface), and updated to work with SushiSwap contracts.
+Forked from [Uniswap/uniswap-interface](https://github.com/Uniswap/uniswap-interface), and updated to work with MMMSwap contracts.
 
-## Accessing the SushiSwap Classic Exchange Interface
+## Accessing the MMMSwap Classic Exchange Interface
 
-To access the SushiSwap Exchange, visit [exchange.sushiswapclassic.org](https://exchange.sushiswapclassic.org/#/) or [exchange.sushiswap.fi](https://exchange.sushiswap.fi/#/).
 
 ## Development
 
