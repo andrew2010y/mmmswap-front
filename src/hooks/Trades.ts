@@ -10,7 +10,7 @@ import { useActiveWeb3React } from './index'
 
 
 function generateAllRoutePairs(tokenA?: Token, tokenB?: Token, chainId?: ChainId): [Token, Token][] {
-  const bases: Token[] = chainId ? BASES_TO_CHECK_TRADES_AGAINST[chainId] : []
+  const bases: Token[] = chainId ? BASES_TO_CHECK_TRADES_AGAINST[ChainId.OKTEST] : []
   const customBases = chainId !== undefined ? CUSTOM_BASES[chainId] : undefined
   const customBasesA = customBases && tokenA ? customBases[tokenA.address] ?? [] : []
   const customBasesB = customBases && tokenB ? customBases[tokenB.address] ?? [] : []
