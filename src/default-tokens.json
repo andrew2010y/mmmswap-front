@@ -1,0 +1,85 @@
+{
+  "name": "MMM Default Tokens",
+  "timestamp": "2021-03-01T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "logoURI": "https://exchange.sushiswap.org/nomi.png",
+  "keywords": ["nomichef", "default", "list"],
+  "tokens": [
+    {
+      "address": "0x2219845942d28716c0F7C605765fABDcA1a7d9E0",
+      "chainId": 65,
+      "name": "WOKT",
+      "symbol": "WOKT",
+      "decimals": 10,
+      "logoURI": "https://static.kswap.finance/tokenlist/logos/WOKT.png"
+    },
+    {
+      "address": "0xe579156f9decc4134b5e3a30a24ac46bb8b01281",
+      "chainId": 65,
+      "name": "USDT",
+      "symbol": "USDT",
+      "decimals": 10,
+      "logoURI": "https://static.kswap.finance/tokenlist/logos/USDT.png"
+    },
+    {
+      "address": "0x3e33590013b24bf21d4ccca3a965ea10e570d5b2",
+      "chainId": 65,
+      "name": "USDC",
+      "symbol": "USDC",
+      "decimals": 10,
+      "logoURI": "https://static.kswap.finance/tokenlist/logos/USDC.png"
+    },
+    {
+      "address": "0x533367b864d9b9aa59d0dcb6554df0c89feef1ff",
+      "chainId": 65,
+      "name": "USDK",
+      "symbol": "USDK",
+      "decimals": 10,
+      "logoURI": "https://static.kswap.finance/tokenlist/logos/USDK.png"
+    },
+    {
+      "address": "0x09973e7e3914eb5ba69c7c025f30ab9446e3e4e0",
+      "chainId": 65,
+      "name": "BTCK",
+      "symbol": "BTCK",
+      "decimals": 10,
+      "logoURI": "https://static.kswap.finance/tokenlist/logos/BTCK.png"
+    },
+    {
+      "address": "0xdf950cecf33e64176ada5dd733e170a56d11478e",
+      "chainId": 65,
+      "name": "ETHK",
+      "symbol": "ETHK",
+      "decimals": 10,
+      "logoURI": "https://static.kswap.finance/tokenlist/logos/ETHK.png"
+    },
+    {
+      "address": "0x72f8fa5da80dc6e20e00d02724cf05ebd302c35f",
+      "chainId": 65,
+      "name": "DOTK",
+      "symbol": "DOTK",
+      "decimals": 10,
+      "logoURI": "https://static.kswap.finance/tokenlist/logos/DOTK.png"
+    },
+    {
+      "address": "0xf6a0dc1fd1d2c0122ab075d7ef93ad79f02ccb93",
+      "chainId": 65,
+      "name": "FILK",
+      "symbol": "FILK",
+      "decimals": 10,
+      "logoURI": "https://static.kswap.finance/tokenlist/logos/FILK.png"
+    },
+    {
+      "address": "0xd616388f6533b6f1c31968a305fbee1727f55850",
+      "chainId": 65,
+      "name": "LTCK",
+      "symbol": "LTCK",
+      "decimals": 10,
+      "logoURI": "https://static.kswap.finance/tokenlist/logos/LTCK.png"
+    }
+  ]
+}
