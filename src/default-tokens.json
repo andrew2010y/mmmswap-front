@@ -10,10 +10,18 @@
   "keywords": ["nomichef", "default", "list"],
   "tokens": [
     {
-      "address": "0xf98a677d75ee129b6929b7b771f1627f1c0c7780",
+      "address": "0xDA0bab807633f07f013f94DD0E6A4F96F8742B53",
       "chainId": 65,
       "name": "WOKT",
       "symbol": "WOKT",
+      "decimals": 18,
+      "logoURI": "https://static.kswap.finance/tokenlist/logos/WOKT.png"
+    },
+    {
+      "address": "0x774C95d4c09382faAf36734DE6988B7917Ba4aEe",
+      "chainId": 65,
+      "name": "MmmToken",
+      "symbol": "MMM",
       "decimals": 18,
       "logoURI": "https://static.kswap.finance/tokenlist/logos/WOKT.png"
     },
