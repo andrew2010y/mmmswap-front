@@ -23,7 +23,7 @@
       "name": "MmmToken",
       "symbol": "MMM",
       "decimals": 18,
-      "logoURI": "https://static.kswap.finance/tokenlist/logos/WOKT.png"
+      "logoURI": "https://raw.githubusercontent.com/MMMSwap/mmmswap-interface/main/public/favicon.ico"
     },
     {
       "address": "0xe579156f9decc4134b5e3a30a24ac46bb8b01281",
